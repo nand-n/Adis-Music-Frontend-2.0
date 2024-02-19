@@ -1,9 +1,12 @@
 import { SagaIterator } from '@redux-saga/core'
 import { call, put, takeEvery } from 'redux-saga/effects'
+import { createPost, deletePost, getPosts, updatePost } from '../api'
+import { postsActions } from './posts.slice'
+import { Post } from '..'
 
-import { createPost, deletePost, getPosts, updatePost } from 'features/posts/api'
-import { postsActions } from 'features/posts/store/posts.slice'
-import { Post } from 'features/posts/types'
+// import { createPost, deletePost, getPosts, updatePost } from 'features/posts/api'
+// import { postsActions } from 'features/posts/store/posts.slice'
+// import { Post } from 'features/posts/types'
 
 // Worker Sagas
 export function* onGetPosts(): SagaIterator {

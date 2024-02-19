@@ -1,8 +1,10 @@
 // DUCKS pattern
 import { createAction, createSlice, nanoid, PayloadAction } from '@reduxjs/toolkit'
 
-import { Post } from 'features/posts/types'
-import type { RootState } from 'store/store'
+// import { Post } from 'features/posts/types'
+import type { RootState } from '../../../store/store'
+import { Post } from '..'
+// import type { RootState } from './store'
 
 export interface PostsState {
   posts: Post[]

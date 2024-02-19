@@ -1,8 +1,11 @@
 import { useCallback } from 'react'
+import { Post, PostFormInput } from '..'
+import { useAppDispatch, useAppSelector } from '../../../store/hooks'
+import { postsActions, selectPosts } from '../store/posts.slice'
 
-import { postsActions, selectPosts } from 'features/posts/store'
-import { Post, PostFormInput } from 'features/posts/types'
-import { useAppDispatch, useAppSelector } from 'store/hooks'
+// import { postsActions, selectPosts } from 'features/posts/store'
+// import { Post, PostFormInput } from 'features/posts/types'
+// import { useAppDispatch, useAppSelector } from 'store/hooks'
 
 export type PostServiceOperators = {
   posts: Post[]

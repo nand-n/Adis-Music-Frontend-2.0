@@ -2,11 +2,11 @@ import createSagaMiddleware from '@redux-saga/core'
 import { configureStore } from '@reduxjs/toolkit'
 import { createBrowserHistory } from 'history'
 import { createReduxHistoryContext } from 'redux-first-history'
-import logger from 'redux-logger'
 
 import { Env } from '../config/Env'
 import postsReducer from '../features/posts/store/posts.slice'
 import { rootSaga } from './rootSaga'
+// import logger from 'redux-logger'
 
 const { createReduxHistory, routerMiddleware, routerReducer } = createReduxHistoryContext({
   history: createBrowserHistory(),
@@ -27,7 +27,7 @@ const makeStore = () => {
       getDefaultMiddleware({ thunk: false })
         .concat(sagaMiddleware)
         .concat(routerMiddleware)
-        .concat(logger),
+        // .concat(logger),
   })
 
   sagaMiddleware.run(rootSaga)
