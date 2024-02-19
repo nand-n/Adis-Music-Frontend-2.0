@@ -1,10 +1,10 @@
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import EditIcon from "@mui/icons-material/Edit";
 import { Grid, IconButton, Paper } from "@mui/material";
-import React from "react";
+import { Post } from "..";
 
 
-import { Post } from "features/posts/types";
+// import { Post } from "features/posts/types";
 
 const styles = {
   Icon: {
