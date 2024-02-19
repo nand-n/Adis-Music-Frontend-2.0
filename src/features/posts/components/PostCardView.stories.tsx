@@ -8,7 +8,8 @@ export default {
   title: 'features/components/posts/PostCardView',
   component: PostCardView,
   parameters: { actions: { argTypesRegex: '^on.*' } },
-  decorators: [ Story => (
+  decorators: [ 
+    Story => (
       <Container sx={{ py: 4 }} maxWidth="md">
         <Story />
       </Container>
