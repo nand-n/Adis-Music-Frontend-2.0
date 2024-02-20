@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Env } from 'config/Env'
-import { Post } from 'features/posts/types'
-import makeApi from "libs/core/configureAxios";
+
+import { Post } from "..";
+import Env from "../../../config/Env";
+import makeApi from "../../../libs/core/configureAxios";
 
 const api = makeApi(`${Env.API_BASE_URL}`);
 

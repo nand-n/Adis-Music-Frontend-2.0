@@ -1,9 +1,8 @@
 import { Grid } from "@mui/material";
-import React from "react";
 
-import { PostCardView } from "features/posts/components/PostCardView";
 
 import { Post } from "../types";
+import { PostCardView } from "./PostCardView";
 
 export type PostListProps = {
   posts: Post[]
